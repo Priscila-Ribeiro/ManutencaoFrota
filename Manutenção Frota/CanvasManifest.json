@@ -136,6 +136,7 @@
   },
   "ScreenOrder": [
     "Tela_inicial",
-    "Tela_Frota"
+    "Tela_Frota",
+    "Tela_Vistoria"
   ]
 }
