@@ -1,0 +1,222 @@
+Tela_Frota As screen:
+    Fill: =RGBA(31, 31, 31, 1)
+    LoadingSpinnerColor: =RGBA(255, 200, 61, 1)
+
+    Rectangle1 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(255, 200, 61, 1)
+        FocusedBorderThickness: =4
+        Height: =130
+        HoverFill: =RGBA(255, 200, 61, 1)
+        PressedFill: =RGBA(255, 200, 61, 1)
+        Width: =640
+        ZIndex: =1
+
+    Label4 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(31, 31, 31, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Lato Black'
+        Height: =70
+        Size: =33
+        Text: ="Sua Frota"
+        Width: =560
+        X: =40
+        Y: =40
+        ZIndex: =2
+
+    Arrow1 As arrow.backArrow:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        Fill: =RGBA(255, 200, 61, 1)
+        OnSelect: =Navigate(Tela_inicial)
+        X: =40
+        Y: =1040
+        ZIndex: =4
+
+    "Gallery3 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+        BorderColor: =RGBA(109, 109, 109, 1)
+        DelayItemLoading: =true
+        Items: =Veículos
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplatePadding: =0
+        TemplateSize: =104
+        Y: =274
+        ZIndex: =7
+
+        Image6 As image:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Height: =72
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Image: =If(ThisItem.Tipo_Veículo = "Caminhão" ,img_caminhao,img_van)
+            OnSelect: =Select(Parent)
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            Width: =72
+            X: =29
+            Y: =12
+            ZIndex: =1
+
+        Title3 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =35
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =18
+            Text: =ThisItem.Modelo
+            VerticalAlign: =VerticalAlign.Top
+            Width: =217
+            X: =127
+            Y: =24
+            ZIndex: =2
+
+        Subtitle3 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =12
+            Text: =ThisItem.Placa
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Title3.Width
+            X: =127
+            Y: =59
+            ZIndex: =3
+
+        NextArrow3 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            Color: =RGBA(255, 200, 61, 1)
+            Height: =70
+            Icon: =Icon.CalendarBlank
+            OnSelect: =Select(Parent)
+            PaddingBottom: =16
+            PaddingLeft: =16
+            PaddingRight: =16
+            PaddingTop: =16
+            Tooltip: ="Exibir detalhes do item"
+            Width: =75
+            X: =344
+            Y: =18
+            ZIndex: =4
+
+        Separator3 As rectangle:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =8
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - Self.Height
+            ZIndex: =5
+
+        Image9 As image:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Height: =28
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Image: =img_manutencao
+            OnSelect: =Select(Parent)
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Visible: =If(ThisItem.Status = "Não Apto",true, false)
+            Width: =87
+            X: =54
+            Y: =18
+            ZIndex: =6
+
+        Subtitle3_1 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =42
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =12
+            Text: =ThisItem.Modificado
+            VerticalAlign: =VerticalAlign.Top
+            Width: =112
+            X: =406
+            Y: =32
+            ZIndex: =7
+
+    add As group:
+        Height: =5
+        Width: =5
+        X: =60
+        Y: =60
+        ZIndex: =7
+
+        Icon1 As icon.Add:
+            BorderColor: =RGBA(109, 109, 109, 1)
+            Color: =RGBA(255, 200, 61, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(220, 220, 220, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Height: =35
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Icon: =Icon.Add
+            OnSelect: =Navigate(Tela_Vistoria)
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Width: =35
+            X: =557
+            Y: =1047
+            ZIndex: =5
+
+        Circle2 As circle:
+            BorderColor: =RGBA(255, 200, 61, 1)
+            BorderThickness: =3
+            DisabledFill: =RGBA(255, 200, 61, 1)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            HoverFill: =RGBA(0, 0, 0, 0)
+            OnSelect: =Navigate(Tela_Vistoria)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Width: =50
+            X: =550
+            Y: =1040
+            ZIndex: =6
+

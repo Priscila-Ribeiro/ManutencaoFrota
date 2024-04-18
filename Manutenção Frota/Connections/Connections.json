@@ -1,0 +1,24 @@
+{
+  "6ce9e619-ffe7-4499-8542-85a8c541a9b9": {
+    "connectionRef": {
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1682/1.0.1682.3676/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
+    },
+    "datasets": {
+      "https://liveestacio.sharepoint.com/sites/manutencao_frota": {
+        "dataSources": {
+          "Veículos": {
+            "tableName": "83b38e28-80e1-4cfa-a985-d62042554044"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Veículos"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "6ce9e619-ffe7-4499-8542-85a8c541a9b9"
+  }
+}

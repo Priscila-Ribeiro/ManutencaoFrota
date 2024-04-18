@@ -1,0 +1,366 @@
+Tela_Vistoria As screen:
+    Fill: =RGBA(31, 31, 31, 1)
+    LoadingSpinnerColor: =RGBA(255, 200, 61, 1)
+
+    Rectangle1_1 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(255, 200, 61, 1)
+        FocusedBorderThickness: =4
+        Height: =130
+        HoverFill: =RGBA(255, 200, 61, 1)
+        PressedFill: =RGBA(255, 200, 61, 1)
+        Width: =640
+        ZIndex: =1
+
+    Label4_1 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(31, 31, 31, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Lato Black'
+        Height: =70
+        Size: =33
+        Text: ="Sua Frota"
+        Width: =560
+        X: =40
+        Y: =40
+        ZIndex: =2
+
+    Seleciona_placa As dropdown:
+        BorderColor: =RGBA(109, 109, 109, 1)
+        BorderStyle: =BorderStyle.None
+        ChevronBackground: =RGBA(31, 31, 31, 1)
+        ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
+        ChevronDisabledFill: =RGBA(166, 166, 166, 1)
+        ChevronFill: =RGBA(218, 218, 218, 1)
+        ChevronHoverBackground: =RGBA(79, 79, 79, 1)
+        ChevronHoverFill: =RGBA(218, 218, 218, 1)
+        Color: =RGBA(31, 31, 31, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.'Segoe UI'
+        Height: =83
+        HoverBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
+        HoverColor: =RGBA(31, 31, 31, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        Items: =Veículos
+        PaddingBottom: =5
+        PaddingLeft: =12
+        PaddingRight: =5
+        PaddingTop: =5
+        PressedBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
+        PressedColor: =RGBA(31, 31, 31, 1)
+        PressedFill: =RGBA(255, 255, 255, 1)
+        SelectionColor: =RGBA(31, 31, 31, 1)
+        SelectionFill: =RGBA(255, 255, 255, 1)
+        Size: =21
+        Width: =269
+        X: =32
+        Y: =236
+        ZIndex: =3
+
+    Image5 As image:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =180
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Image: =If(Seleciona_placa.Selected.Tipo_Veículo = "Caminhão",img_caminhao,img_van)
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =284
+        X: =301
+        Y: =208
+        ZIndex: =4
+
+    Label5 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Lato Black'
+        Height: =85
+        Size: =24
+        Text: =Seleciona_placa.Selected.Modelo
+        Width: =284
+        X: =301
+        Y: =378
+        ZIndex: =5
+
+    Label6 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =53
+        Size: =21
+        Text: ="Elétrica"
+        Width: =246
+        X: =16
+        Y: =472
+        ZIndex: =6
+
+    Label6_1 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =53
+        Size: =21
+        Text: ="Iluminação"
+        Width: =246
+        X: =16
+        Y: =525
+        ZIndex: =7
+
+    Label6_2 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =53
+        Size: =21
+        Text: ="Motor"
+        Width: =246
+        X: =16
+        Y: =578
+        ZIndex: =8
+
+    Label6_3 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =53
+        Size: =21
+        Text: ="Freios"
+        Width: =246
+        X: =16
+        Y: =631
+        ZIndex: =9
+
+    Label6_4 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =53
+        Size: =21
+        Text: ="Pneus"
+        Width: =246
+        X: =16
+        Y: =684
+        ZIndex: =10
+
+    tg_eletrica As toggleSwitch:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        FalseFill: =RGBA(218, 218, 218, 1)
+        FalseHoverFill: =RGBA(218, 218, 218, 1)
+        FalseText: ="Não Apto"
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        HandleFill: =RGBA(255, 255, 255, 1)
+        Height: =38
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        Size: =21
+        TrueFill: =RGBA(255, 200, 61, 1)
+        TrueHoverFill: =ColorFade(RGBA(255, 200, 61, 1), 30%)
+        TrueText: ="Apto"
+        Width: =200
+        X: =304
+        Y: =480
+        ZIndex: =11
+
+    tg_iluminacao As toggleSwitch:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        FalseFill: =RGBA(218, 218, 218, 1)
+        FalseHoverFill: =RGBA(218, 218, 218, 1)
+        FalseText: ="Não Apto"
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        HandleFill: =RGBA(255, 255, 255, 1)
+        Height: =38
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        Size: =21
+        TrueFill: =RGBA(255, 200, 61, 1)
+        TrueHoverFill: =ColorFade(RGBA(255, 200, 61, 1), 30%)
+        TrueText: ="Apto"
+        Width: =200
+        X: =304
+        Y: =533
+        ZIndex: =12
+
+    tg_motor As toggleSwitch:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        FalseFill: =RGBA(218, 218, 218, 1)
+        FalseHoverFill: =RGBA(218, 218, 218, 1)
+        FalseText: ="Não Apto"
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        HandleFill: =RGBA(255, 255, 255, 1)
+        Height: =38
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        Size: =21
+        TrueFill: =RGBA(255, 200, 61, 1)
+        TrueHoverFill: =ColorFade(RGBA(255, 200, 61, 1), 30%)
+        TrueText: ="Apto"
+        Width: =200
+        X: =304
+        Y: =586
+        ZIndex: =13
+
+    tg_freios As toggleSwitch:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        FalseFill: =RGBA(218, 218, 218, 1)
+        FalseHoverFill: =RGBA(218, 218, 218, 1)
+        FalseText: ="Não Apto"
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        HandleFill: =RGBA(255, 255, 255, 1)
+        Height: =38
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        Size: =21
+        TrueFill: =RGBA(255, 200, 61, 1)
+        TrueHoverFill: =ColorFade(RGBA(255, 200, 61, 1), 30%)
+        TrueText: ="Apto"
+        Width: =200
+        X: =304
+        Y: =639
+        ZIndex: =14
+
+    tg_pneus As toggleSwitch:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        FalseFill: =RGBA(218, 218, 218, 1)
+        FalseHoverFill: =RGBA(218, 218, 218, 1)
+        FalseText: ="Não Apto"
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        HandleFill: =RGBA(255, 255, 255, 1)
+        Height: =38
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        Size: =21
+        TrueFill: =RGBA(255, 200, 61, 1)
+        TrueHoverFill: =ColorFade(RGBA(255, 200, 61, 1), 30%)
+        TrueText: ="Apto"
+        Width: =200
+        X: =304
+        Y: =692
+        ZIndex: =15
+
+    TextInput2 As text:
+        BorderColor: =RGBA(109, 109, 109, 1)
+        BorderThickness: =2
+        Color: =RGBA(31, 31, 31, 1)
+        Default: ="Digite aqui as observações"
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =137
+        HoverBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        PressedBorderColor: =RGBA(255, 200, 61, 1)
+        PressedColor: =RGBA(0, 0, 0, 1)
+        PressedFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =21
+        Width: =560
+        X: =40
+        Y: =787
+        ZIndex: =16
+
+    Button2 As button:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Color: =RGBA(31, 31, 31, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(255, 200, 61, 1)
+        FocusedBorderColor: =ColorFade(Self.Fill, 75%)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =70
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =RGBA(31, 31, 31, 1)
+        HoverFill: =ColorFade(RGBA(255, 200, 61, 1), 10%)
+        OnSelect: =
+        PressedBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 50%)
+        PressedColor: =RGBA(31, 31, 31, 1)
+        PressedFill: =ColorFade(RGBA(255, 200, 61, 1), 30%)
+        RadiusBottomLeft: =50
+        RadiusBottomRight: =50
+        RadiusTopLeft: =50
+        RadiusTopRight: =50
+        Size: =24
+        Text: ="Adicionar"
+        Width: =280
+        X: =192
+        Y: =963
+        ZIndex: =17
+
