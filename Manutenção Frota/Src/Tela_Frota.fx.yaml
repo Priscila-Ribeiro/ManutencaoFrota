@@ -36,13 +36,13 @@ Tela_Frota As screen:
     "Gallery2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
         BorderColor: =RGBA(109, 109, 109, 1)
         DelayItemLoading: =true
-        Height: =715
+        Height: =373
         Items: =Veículos
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
         TemplateSize: =104
-        Y: =238
+        Y: =340
         ZIndex: =3
 
         Image3 As image:
@@ -168,4 +168,53 @@ Tela_Frota As screen:
             X: =58
             Y: =11
             ZIndex: =7
+
+    Arrow1 As arrow.backArrow:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        Fill: =RGBA(255, 200, 61, 1)
+        OnSelect: =Navigate(Tela_inicial)
+        X: =40
+        Y: =1040
+        ZIndex: =4
+
+    add As group:
+        Height: =5
+        Width: =5
+        X: =60
+        Y: =60
+        ZIndex: =7
+
+        Icon1 As icon.Add:
+            BorderColor: =RGBA(109, 109, 109, 1)
+            Color: =RGBA(255, 200, 61, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(220, 220, 220, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Height: =35
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Icon: =Icon.Add
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Width: =35
+            X: =538
+            Y: =1047
+            ZIndex: =5
+
+        Circle2 As circle:
+            BorderColor: =RGBA(255, 200, 61, 1)
+            BorderThickness: =3
+            DisabledFill: =RGBA(255, 200, 61, 1)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            HoverFill: =RGBA(0, 0, 0, 0)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Width: =50
+            X: =531
+            Y: =1040
+            ZIndex: =6
 
