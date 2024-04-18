@@ -135,6 +135,7 @@
     "UserLocale": "pt-BR"
   },
   "ScreenOrder": [
-    "Tela_inicial"
+    "Tela_inicial",
+    "Tela_Frota"
   ]
 }
