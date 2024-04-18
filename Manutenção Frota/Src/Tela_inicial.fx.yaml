@@ -1,4 +1,4 @@
-Screen1 As screen:
+Tela_inicial As screen:
     Fill: =RGBA(31, 31, 31, 1)
     LoadingSpinnerColor: =RGBA(255, 200, 61, 1)
 
@@ -88,7 +88,7 @@ Screen1 As screen:
         Y: =683
         ZIndex: =5
 
-    Button1 As button:
+    btnMan_Frota As button:
         BorderColor: =RGBA(0, 0, 0, 0)
         Color: =RGBA(31, 31, 31, 1)
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
