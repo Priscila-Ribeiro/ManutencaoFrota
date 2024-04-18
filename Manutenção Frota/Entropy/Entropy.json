@@ -10,22 +10,23 @@
     "Host": 3,
     "Image1": 8,
     "Image3": 25,
+    "Image4": 32,
     "inicial": 5,
     "inicial_1": 10,
     "Label2": 6,
     "Label4": 13,
     "NextArrow2": 28,
     "Rectangle1": 14,
-    "Rectangle3": 30,
     "Separator2": 29,
     "Subtitle2": 27,
     "Tela_Frota": 12,
     "Tela_inicial": 4,
-    "Title2": 26
+    "Title2": 26,
+    "Title2_1": 31
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "04/18/2024 19:03:01",
+  "HeaderLastSavedDateTimeUTC": "04/18/2024 19:10:41",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "6ce9e619-ffe7-4499-8542-85a8c541a9b9": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/4176341e2cb94064aeb2adfe41b911c3\""
@@ -74,18 +75,19 @@
     "Host": {},
     "Image1": {},
     "Image3": {},
+    "Image4": {},
     "inicial": {},
     "inicial_1": {},
     "Label2": {},
     "Label4": {},
     "NextArrow2": {},
     "Rectangle1": {},
-    "Rectangle3": {},
     "Separator2": {},
     "Subtitle2": {},
     "Tela_Frota": {},
     "Tela_inicial": {},
-    "Title2": {}
+    "Title2": {},
+    "Title2_1": {}
   },
   "PCFDynamicSchemaForIRRetrievalEntry": {},
   "PCFTemplateEntry": {},
@@ -98,18 +100,19 @@
     "Host": 0,
     "Image1": 3,
     "Image3": 11,
+    "Image4": 0,
     "inicial": 0,
     "inicial_1": 4,
     "Label2": 1,
     "Label4": 7,
     "NextArrow2": 12,
     "Rectangle1": 6,
-    "Rectangle3": 10,
     "Separator2": 15,
     "Subtitle2": 14,
     "Tela_Frota": 0,
     "Tela_inicial": 0,
-    "Title2": 13
+    "Title2": 13,
+    "Title2_1": 13
   },
   "ResourcesJsonIndices": {
     "Image-green_arrow": 0,
@@ -125,7 +128,7 @@
   "VolatileProperties": {
     "AnalysisLoadTime": 0.0185301,
     "ControlCount": {
-      "label": 1
+      "label": 2
     }
   },
   "WasLocalDatabaseReferencesEmpty": true
