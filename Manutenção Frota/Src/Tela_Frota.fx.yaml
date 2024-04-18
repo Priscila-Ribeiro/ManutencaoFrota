@@ -197,12 +197,12 @@ Tela_Frota As screen:
             HoverColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
             HoverFill: =RGBA(0, 0, 0, 0)
             Icon: =Icon.Add
-            OnSelect: =
+            OnSelect: =Navigate(Tela_Vistoria)
             PressedBorderColor: =RGBA(0, 0, 0, 0)
             PressedColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
             PressedFill: =RGBA(0, 0, 0, 0)
             Width: =35
-            X: =538
+            X: =557
             Y: =1047
             ZIndex: =5
 
@@ -213,10 +213,10 @@ Tela_Frota As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             HoverFill: =RGBA(0, 0, 0, 0)
-            OnSelect: =
+            OnSelect: =Navigate(Tela_Vistoria)
             PressedFill: =RGBA(0, 0, 0, 0)
             Width: =50
-            X: =531
-            Y: =1039
+            X: =550
+            Y: =1040
             ZIndex: =6
 
