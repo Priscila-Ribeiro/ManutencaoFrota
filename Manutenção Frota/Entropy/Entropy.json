@@ -28,6 +28,7 @@
     "Seleciona_placa": 41,
     "Separator3": 50,
     "Subtitle3": 48,
+    "Subtitle3_1": 55,
     "Tela_Frota": 12,
     "Tela_inicial": 4,
     "Tela_Vistoria": 37,
@@ -35,7 +36,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "04/18/2024 19:53:34",
+  "HeaderLastSavedDateTimeUTC": "04/18/2024 19:55:14",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "6ce9e619-ffe7-4499-8542-85a8c541a9b9": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/4176341e2cb94064aeb2adfe41b911c3\""
@@ -104,6 +105,7 @@
     "Seleciona_placa": {},
     "Separator3": {},
     "Subtitle3": {},
+    "Subtitle3_1": {},
     "Tela_Frota": {},
     "Tela_inicial": {},
     "Tela_Vistoria": {},
@@ -138,6 +140,7 @@
     "Seleciona_placa": 23,
     "Separator3": 15,
     "Subtitle3": 14,
+    "Subtitle3_1": 14,
     "Tela_Frota": 0,
     "Tela_inicial": 0,
     "Tela_Vistoria": 0,
@@ -154,7 +157,7 @@
   "VolatileProperties": {
     "AnalysisLoadTime": 0.0185301,
     "ControlCount": {
-      "label": 3,
+      "label": 4,
       "rectangle": 1
     }
   },
