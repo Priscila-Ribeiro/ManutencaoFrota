@@ -134,19 +134,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Tela_Vistoria.Dropdown1.AccessibleLabel"
+                  "fullyQualifiedName": "Tela_Vistoria.Seleciona_placa.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Tela_Vistoria.Dropdown1.AccessibleLabel",
+                  "fullyQualifiedName": "Tela_Vistoria.Seleciona_placa.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Tela_Vistoria",
-                "type": "Tela_Vistoria.Dropdown1"
+                "type": "Tela_Vistoria.Seleciona_placa"
               }
             }
           ],

@@ -33,8 +33,9 @@ Tela_Vistoria As screen:
         Y: =40
         ZIndex: =2
 
-    Dropdown1 As dropdown:
+    Seleciona_placa As dropdown:
         BorderColor: =RGBA(109, 109, 109, 1)
+        BorderStyle: =BorderStyle.None
         ChevronBackground: =RGBA(31, 31, 31, 1)
         ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
         ChevronDisabledFill: =RGBA(166, 166, 166, 1)
@@ -48,9 +49,9 @@ Tela_Vistoria As screen:
         Font: =Font.'Segoe UI'
         Height: =83
         HoverBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-        HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =RGBA(79, 79, 79, 1)
-        Items: =DropDownSample
+        HoverColor: =RGBA(31, 31, 31, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        Items: =Veículos
         PaddingBottom: =5
         PaddingLeft: =12
         PaddingRight: =5
